@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+  <div id="container">
+    <form action ='/submit' method='post'>
+      <div> Your Name: <input type='text' name='name' > </div>
+      <div> Dojo Location: <select name ='location'> </div>
+        <option value='Seattle'>Seattle</option>
+        <option value='Silicon Valley'>Silicon Valley</option>
+        <option value='Los Angeles'>Los Angeles</option>
+        <option value='Chicago'>Chicagoe</option>
+        <option value='Washington DC'>Washington DC</option>
+        <option value='Dallas'>Dallas</option>
+        </select>
+      <div> Favorite Language: <select name ='language'>
+        <option value='HTML'>HTML</option>
+        <option value='CSS'>CSS</option>
+        <option value='JavaScript'>JavaScript</option>
+        <option value='PHP'>PHP</option>
+        <option value='Python'>Python</option>
+        <option value='Ruby On Rails'>Ruby on Rails</option>
+        </select>
+        
+      <h3>Comment</h3>  
+      <textarea name='comment'> </textarea> 
+      <input class="button"type='submit' value='Submit'>
+    </form>
+  </div>  
+</body>
+</html>
